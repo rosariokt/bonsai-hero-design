@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const Index = () => {
@@ -159,7 +160,7 @@ const Index = () => {
             {/* Products Grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Product 1 */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
                 <div className="relative h-64">
                   <img 
                     src="https://images.unsplash.com/photo-1501854140801-50d01698950b"
@@ -172,17 +173,17 @@ const Index = () => {
                     Premium Ornamental Plants & Bonsai
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Export-quality ornamental plants, bonsai, and rare tropical species for 
-                    landscapers and collectors.
+                    Buy export-quality ornamental plants, bonsai, and rare tropical species. 
+                    We supply high-demand plants for landscapers, nurseries, and collectors worldwide.
                   </p>
-                  <a href="/products" className="text-green-600 font-semibold hover:text-green-700">
-                    Learn More →
-                  </a>
+                  <p className="text-green-600 font-medium">
+                    Bulk and wholesale orders available with international shipping
+                  </p>
                 </div>
               </div>
 
               {/* Product 2 */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
                 <div className="relative h-64">
                   <img 
                     src="https://images.unsplash.com/photo-1518495973542-4542c06a5843"
@@ -195,17 +196,18 @@ const Index = () => {
                     Semi-Mature Bonsai
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    70-80% developed bonsai trees, perfect for further cultivation and 
-                    international buyers.
+                    Order semi-mature bonsai (70-80% developed), ideal for export, nurseries, 
+                    and further cultivation. Our bonsai are carefully trained for years to ensure 
+                    strong roots.
                   </p>
-                  <a href="/bonsai" className="text-green-600 font-semibold hover:text-green-700">
-                    Learn More →
-                  </a>
+                  <p className="text-green-600 font-medium">
+                    Available in bulk for international buyers
+                  </p>
                 </div>
               </div>
 
               {/* Product 3 */}
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
                 <div className="relative h-64">
                   <img 
                     src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07"
@@ -215,28 +217,86 @@ const Index = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
-                    Wholesale Landscaping Plants
+                    Wholesale Landscaping & Bulk Plants
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Premium plants for urban beautification and commercial spaces with export 
-                    certification.
+                    Buy premium landscaping plants in bulk for urban beautification, resorts, 
+                    and commercial spaces. Our plants are grown using sustainable methods.
                   </p>
-                  <a href="/wholesale" className="text-green-600 font-semibold hover:text-green-700">
-                    Learn More →
-                  </a>
+                  <p className="text-green-600 font-medium">
+                    Large-scale supply with full export certification
+                  </p>
                 </div>
               </div>
-            </div>
 
-            {/* Additional Services */}
-            <div className="mt-16 text-center">
-              <a
-                href="/services"
-                className="inline-flex items-center px-8 py-3 rounded-lg bg-green-600 text-white 
-                         font-semibold transition-all duration-300 hover:bg-green-700 hover:scale-105"
-              >
-                View All Services
-              </a>
+              {/* Product 4 */}
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+                <div className="relative h-64">
+                  <img 
+                    src="https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151"
+                    alt="Rare Tropical Plants"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">
+                    Rare Tropical Plants
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Discover and order rare tropical plants, including exotic variegated species, 
+                    sourced from Asia's rich biodiversity. Perfect for collectors and specialty stores.
+                  </p>
+                  <p className="text-green-600 font-medium">
+                    Professional packaging and export compliance
+                  </p>
+                </div>
+              </div>
+
+              {/* Product 5 */}
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+                <div className="relative h-64">
+                  <img 
+                    src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
+                    alt="Competition-Ready Bonsai"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">
+                    Competition-Ready Bonsai
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Fully matured, exhibition-grade bonsai, crafted with precision for competitions 
+                    and high-end collections. Each tree is shaped using traditional techniques.
+                  </p>
+                  <p className="text-green-600 font-medium">
+                    Limited stock available for direct purchase
+                  </p>
+                </div>
+              </div>
+
+              {/* Product 6 */}
+              <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+                <div className="relative h-64">
+                  <img 
+                    src="https://images.unsplash.com/photo-1433832597046-4f10e10ac764"
+                    alt="Custom Plant Sourcing"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">
+                    Custom Plant Sourcing
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Looking for specific plants? We provide tailored procurement services, 
+                    connecting buyers with trusted growers and exporters.
+                  </p>
+                  <p className="text-green-600 font-medium">
+                    Rare species and bulk orders available
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
