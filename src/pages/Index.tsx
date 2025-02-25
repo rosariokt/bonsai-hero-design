@@ -5,6 +5,7 @@ import About from "../components/About";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Products from "../components/Products";
 import Process from "../components/Process";
+import Testimonials from "../components/Testimonials";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <WhyChooseUs />
       <Products />
       <Process />
+      <Testimonials />
     </>
   );
 };
