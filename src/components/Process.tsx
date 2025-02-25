@@ -3,7 +3,7 @@ import React from "react";
 
 const Process = () => {
   return (
-    <section id="process" className="py-20 bg-white">
+    <section id="process" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -17,20 +17,22 @@ const Process = () => {
             </p>
           </div>
 
-          {/* Process Steps */}
-          <div className="grid gap-8 relative">
-            {/* Connecting Line */}
-            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-green-200 transform -translate-x-1/2" />
-
+          {/* Process Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Step 1 */}
-            <div className="group lg:grid lg:grid-cols-2 gap-8 items-center">
-              <div className="hidden lg:block" /> {/* Spacer for right alignment */}
-              <div className="bg-white p-8 rounded-lg shadow-lg relative transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
-                {/* Number Badge */}
-                <div className="absolute -left-3 lg:-left-16 top-8 w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold z-10 transform transition-transform group-hover:rotate-12">
-                  1️⃣
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+              <div className="relative h-64">
+                <img 
+                  src="https://images.unsplash.com/photo-1590249003789-3c0f5c038c50"
+                  alt="Careful Selection & Growth"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  1
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">
                   Careful Selection & Growth
                 </h3>
                 <p className="text-gray-600">
@@ -42,31 +44,43 @@ const Process = () => {
             </div>
 
             {/* Step 2 */}
-            <div className="group lg:grid lg:grid-cols-2 gap-8 items-center">
-              <div className="bg-white p-8 rounded-lg shadow-lg relative transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
-                <div className="absolute -right-3 lg:-right-16 top-8 w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold z-10 transform transition-transform group-hover:rotate-12">
-                  2️⃣
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+              <div className="relative h-64">
+                <img 
+                  src="https://images.unsplash.com/photo-1512428813834-c702c7702b78"
+                  alt="Shaping & Refinement"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  2
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">
                   Shaping & Refinement
                 </h3>
                 <p className="text-gray-600">
                   Our skilled artisans use traditional and modern bonsai training methods—pruning, 
                   wiring, and grafting—to sculpt each plant into a masterpiece. This process enhances 
-                  the tree's natural character, making it suitable for both indoor and outdoor displays.
+                  the tree's natural character.
                 </p>
               </div>
-              <div className="hidden lg:block" /> {/* Spacer for left alignment */}
             </div>
 
             {/* Step 3 */}
-            <div className="group lg:grid lg:grid-cols-2 gap-8 items-center">
-              <div className="hidden lg:block" />
-              <div className="bg-white p-8 rounded-lg shadow-lg relative transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
-                <div className="absolute -left-3 lg:-left-16 top-8 w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold z-10 transform transition-transform group-hover:rotate-12">
-                  3️⃣
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+              <div className="relative h-64">
+                <img 
+                  src="https://images.unsplash.com/photo-1576995853168-e3c1361859d4"
+                  alt="Health & Quality Inspection"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  3
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">
                   Health & Quality Inspection
                 </h3>
                 <p className="text-gray-600">
@@ -78,12 +92,19 @@ const Process = () => {
             </div>
 
             {/* Step 4 */}
-            <div className="group lg:grid lg:grid-cols-2 gap-8 items-center">
-              <div className="bg-white p-8 rounded-lg shadow-lg relative transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
-                <div className="absolute -right-3 lg:-right-16 top-8 w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold z-10 transform transition-transform group-hover:rotate-12">
-                  4️⃣
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+              <div className="relative h-64">
+                <img 
+                  src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8"
+                  alt="Secure Packaging for Export"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  4
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">
                   Secure Packaging for Export
                 </h3>
                 <p className="text-gray-600">
@@ -92,17 +113,22 @@ const Process = () => {
                   reinforced materials to ensure safe transportation.
                 </p>
               </div>
-              <div className="hidden lg:block" />
             </div>
 
             {/* Step 5 */}
-            <div className="group lg:grid lg:grid-cols-2 gap-8 items-center">
-              <div className="hidden lg:block" />
-              <div className="bg-white p-8 rounded-lg shadow-lg relative transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
-                <div className="absolute -left-3 lg:-left-16 top-8 w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold z-10 transform transition-transform group-hover:rotate-12">
-                  5️⃣
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+              <div className="relative h-64">
+                <img 
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+                  alt="Fast & Reliable Global Shipping"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  5
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">
                   Fast & Reliable Global Shipping
                 </h3>
                 <p className="text-gray-600">
@@ -114,12 +140,19 @@ const Process = () => {
             </div>
 
             {/* Step 6 */}
-            <div className="group lg:grid lg:grid-cols-2 gap-8 items-center">
-              <div className="bg-white p-8 rounded-lg shadow-lg relative transform transition-all duration-500 hover:scale-105 hover:shadow-xl">
-                <div className="absolute -right-3 lg:-right-16 top-8 w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold z-10 transform transition-transform group-hover:rotate-12">
-                  6️⃣
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
+              <div className="relative h-64">
+                <img 
+                  src="https://images.unsplash.com/photo-1516321497487-e288fb19713f"
+                  alt="Aftercare Support & Guidance"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 left-4 w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center text-xl font-bold">
+                  6
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-800">
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">
                   Aftercare Support & Guidance
                 </h3>
                 <p className="text-gray-600">
@@ -128,7 +161,6 @@ const Process = () => {
                   with post-delivery inquiries, ensuring customer satisfaction.
                 </p>
               </div>
-              <div className="hidden lg:block" />
             </div>
           </div>
         </div>
