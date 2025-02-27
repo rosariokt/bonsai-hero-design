@@ -7,6 +7,7 @@ import Products from "../components/Products";
 import Process from "../components/Process";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Process />
       <Testimonials />
       <FAQ />
+      <Footer />
     </>
   );
 };
