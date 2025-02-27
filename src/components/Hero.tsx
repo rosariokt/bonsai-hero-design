@@ -37,16 +37,14 @@ const Hero = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="/collection"
+              href="#products"
               className="inline-flex items-center px-8 py-3 rounded-lg bg-white text-gray-900 font-semibold 
                        transition-all duration-300 hover:bg-gray-100 hover:scale-105"
             >
               Explore Our Bonsai Collection
             </a>
             <a
-              href="https://wa.me/your-number"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#footer"
               className="inline-flex items-center px-8 py-3 rounded-lg bg-transparent border-2 border-white 
                        text-white font-semibold transition-all duration-300 hover:bg-white/10 hover:scale-105"
             >
