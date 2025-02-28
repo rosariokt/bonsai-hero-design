@@ -13,9 +13,10 @@ const Hero = () => {
   };
 
   const desktopContent = {
-    title: "Trusted Bonsai Supplier & Exporter – Wholesale & Landscaping Plants",
+    title: "Wholesale Bonsai Supplier & Exporter – Bulk & Landscaping Plants",
     subtitle: "Premium Quality Bonsai",
-    description: "Indo Cipanas Bonsai is a leading bonsai supplier and exporter specializing in wholesale bonsai trees, rare ornamental plants, and large-scale landscaping greenery. We provide export-grade bonsai with global shipping compliance. Trusted by landscapers, collectors, and businesses worldwide."
+    tagline: "",
+    description: "Indo Cipanas Bonsai supplies wholesale bonsai, rare ornamental plants, and large-scale landscaping greenery. Our export-grade bonsai meet international standards with reliable global shipping, serving landscapers, collectors, and businesses worldwide."
   };
 
   const content = isMobile ? mobileContent : desktopContent;
@@ -48,7 +49,7 @@ const Hero = () => {
           </h1>
 
           {/* Mobile Tagline */}
-          {isMobile && (
+          {isMobile && content.tagline && (
             <div className="mb-6">
               <p className="text-lg text-white/90 font-medium">
                 {content.tagline}
@@ -70,7 +71,7 @@ const Hero = () => {
                        transition-all duration-300 hover:bg-green-700 hover:scale-105
                        text-base"
             >
-              {isMobile ? "Browse Products" : "Explore Our Bonsai Collection"}
+              {isMobile ? "Browse Products" : "Browse Products"}
             </a>
             {!isMobile && (
               <a
