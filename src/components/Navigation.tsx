@@ -17,7 +17,6 @@ const Navigation = () => {
 
   const handleMobileMenuClick = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    // Prevent scrolling when mobile menu is open
     document.body.style.overflow = !isMobileMenuOpen ? 'hidden' : 'unset';
   };
 
@@ -37,14 +36,14 @@ const Navigation = () => {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled || isMobileMenuOpen ? "bg-white shadow-md" : "bg-transparent"
+        isScrolled || isMobileMenuOpen ? "bg-white shadow-md" : "md:bg-transparent bg-white/90 backdrop-blur-sm"
       }`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
             <a href="#" className="flex items-center z-50">
               <span className={`font-bold text-xl transition-colors ${
-                isScrolled || isMobileMenuOpen ? "text-gray-900" : "text-white"
+                isScrolled || isMobileMenuOpen ? "text-gray-900" : "md:text-white text-gray-900"
               }`}>
                 Indo Cipanas Bonsai
               </span>
@@ -84,13 +83,9 @@ const Navigation = () => {
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? (
-                <X className={`w-6 h-6 ${
-                  isScrolled || isMobileMenuOpen ? "text-gray-900" : "text-white"
-                }`} />
+                <X className="w-6 h-6 text-gray-900" />
               ) : (
-                <Menu className={`w-6 h-6 ${
-                  isScrolled || isMobileMenuOpen ? "text-gray-900" : "text-white"
-                }`} />
+                <Menu className={`w-6 h-6 ${isScrolled ? "text-gray-900" : "text-gray-900"}`} />
               )}
             </button>
           </div>
@@ -118,7 +113,7 @@ const Navigation = () => {
             ))}
             <a
               href="#footer"
-              className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+              className="w-full max-w-xs px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-center"
               onClick={closeMobileMenu}
             >
               Contact Us
