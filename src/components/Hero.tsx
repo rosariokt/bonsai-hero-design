@@ -7,7 +7,8 @@ const Hero = () => {
 
   const mobileContent = {
     title: "Wholesale exotic Bonsai & Landscaping Plants",
-    subtitle: "Supplier & Exporter of Rare & Ornamental Plants",
+    subtitle: "Premium Quality Bonsai",
+    tagline: "Supplier & Exporter of Rare & Ornamental Plants",
     description: "Indo Cipanas Bonsai provides wholesale bonsai, rare plants, and landscaping greenery for businesses, landscapers, and plant importers. Our plants meet export standards with reliable global shipping."
   };
 
@@ -42,9 +43,18 @@ const Hero = () => {
           </div>
           
           {/* Headline */}
-          <h1 className="mb-6 text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+          <h1 className="mb-3 text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">
             {content.title}
           </h1>
+
+          {/* Mobile Tagline */}
+          {isMobile && (
+            <div className="mb-6">
+              <p className="text-lg text-white/90 font-medium">
+                {content.tagline}
+              </p>
+            </div>
+          )}
 
           {/* Description */}
           <p className="mb-8 text-base sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
@@ -55,9 +65,10 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#products"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 rounded-lg 
-                       bg-green-600 text-white font-semibold transition-all duration-300 
-                       hover:bg-green-700 hover:scale-105"
+              className="max-w-[240px] w-full sm:w-auto inline-flex items-center justify-center 
+                       px-6 py-2.5 rounded-lg bg-green-600 text-white font-semibold 
+                       transition-all duration-300 hover:bg-green-700 hover:scale-105
+                       text-base"
             >
               {isMobile ? "Browse Products" : "Explore Our Bonsai Collection"}
             </a>
