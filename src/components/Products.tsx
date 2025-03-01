@@ -21,7 +21,7 @@ const Products = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
               <div className="relative h-64">
                 <img 
-                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b"
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
                   alt="Premium Ornamental Plants"
                   className="w-full h-full object-cover"
                 />
@@ -44,7 +44,7 @@ const Products = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105">
               <div className="relative h-64">
                 <img 
-                  src="https://images.unsplash.com/photo-1518495973542-4542c06a5843"
+                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
                   alt="Semi-Mature Bonsai"
                   className="w-full h-full object-cover"
                 />
