@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Leaf, TreePine, Globe } from "lucide-react";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
           {/* Main Content */}
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Our Story
+              Rooted in Tradition, Growing with Passion
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Indo Cipanas Bonsai was founded in 2010 as a collective of experienced bonsai growers and ornamental plant specialists. With a commitment to quality and authenticity, we have developed a strong national network of skilled artisans and nurseries, ensuring access to a diverse selection of bonsai and landscaping plants.
@@ -20,30 +21,45 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Feature 1 */}
             <div className="p-8 rounded-xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                Extensive Bonsai & Ornamental Plant Collection
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <div className="flex flex-col items-center mb-4">
+                <div className="p-3 bg-green-100 rounded-full mb-4">
+                  <Leaf className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Extensive Bonsai & Ornamental Plant Collection
+                </h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed text-center">
                 We cultivate and supply a wide range of bonsai species, including Ficus, Juniper, Tamarind, Casuarina, Wrightia, Pemphis, and Premna, along with rare ornamental plants for collectors and landscape projects.
               </p>
             </div>
 
             {/* Feature 2 */}
             <div className="p-8 rounded-xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                Sustainable & Ethical Cultivation
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <div className="flex flex-col items-center mb-4">
+                <div className="p-3 bg-green-100 rounded-full mb-4">
+                  <TreePine className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Sustainable & Ethical Cultivation
+                </h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed text-center">
                 Our growers apply time-honored techniques while integrating sustainable and responsible cultivation practices to ensure long-term plant health and ecological balance.
               </p>
             </div>
 
             {/* Feature 3 */}
             <div className="p-8 rounded-xl bg-gray-50 hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
-                Strong National Network & Scalable Supply
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <div className="flex flex-col items-center mb-4">
+                <div className="p-3 bg-green-100 rounded-full mb-4">
+                  <Globe className="w-8 h-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">
+                  Strong National Network & Scalable Supply
+                </h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed text-center">
                 By collaborating with bonsai artisans and nurseries across different regions, we maintain a reliable and scalable production system, allowing us to meet varying demands while preserving plant quality.
               </p>
             </div>
