@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   Accordion,
@@ -52,11 +51,11 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-gray-50">
+    <section id="faq" className="py-16 md:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Frequently Asked Questions
             </h2>
@@ -66,29 +65,19 @@ const FAQ = () => {
           </div>
 
           {/* FAQ Items */}
-          <div className="bg-white rounded-xl shadow-md overflow-hidden">
-            <Accordion type="single" collapsible className="px-6 py-4">
+          <div className="bg-white rounded-xl shadow-md">
+            <Accordion type="single" collapsible className="px-4 md:px-6 py-2 md:py-4">
               {faqItems.map((item, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left">
+                  <AccordionTrigger className="text-left text-base md:text-lg font-medium">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
+                  <AccordionContent className="text-gray-600 text-sm md:text-base">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
-          </div>
-
-          {/* Contact CTA */}
-          <div className="mt-12 text-center">
-            <p className="text-gray-600 mb-4">
-              Didn't find what you're looking for?
-            </p>
-            <button className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200">
-              Contact Us
-            </button>
           </div>
         </div>
       </div>
