@@ -1,6 +1,6 @@
 
 import React from "react";
-import { MapPin } from "lucide-react";
+import { MapPin, Star } from "lucide-react";
 
 const MapLocation = () => {
   return (
@@ -34,28 +34,46 @@ const MapLocation = () => {
               />
             </div>
 
-            {/* Location Card */}
-            <div className="absolute left-4 top-4 bg-white p-4 md:p-6 rounded-lg shadow-xl max-w-[280px] md:max-w-sm border border-green-100">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 md:w-6 md:h-6 text-green-600 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold text-base md:text-lg mb-2">Indo Cipanas Bonsai</h3>
-                  <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    Jl. Hanjawar, Palsaran, Kec. Cipanas,<br />
-                    Kabupaten Cianjur, Jawa Barat 43253
-                  </p>
-                  <a
-                    href="https://maps.app.goo.gl/RFuWH1EoRd4xZNav7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-green-600 hover:text-green-700 mt-3 text-sm font-medium transition-colors"
-                  >
-                    Get Directions
-                    <svg className="w-4 h-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </a>
+            {/* Location Card - Google Maps Style */}
+            <div className="absolute left-4 top-4 bg-white p-4 rounded-lg shadow-xl max-w-[280px] md:max-w-sm">
+              <div className="space-y-3">
+                {/* Business Name with Icon */}
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <h3 className="font-semibold text-base">Indo Cipanas Bonsai</h3>
                 </div>
+
+                {/* Address */}
+                <p className="text-gray-600 text-sm pl-7">
+                  Jl. Hanjawar, Palsaran, Kec. Cipanas,<br />
+                  Kabupaten Cianjur, Jawa Barat 43253
+                </p>
+
+                {/* Rating */}
+                <div className="flex items-center gap-2 pl-7">
+                  <div className="flex items-center">
+                    <span className="font-medium mr-1">5.0</span>
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                  <span className="text-sm text-gray-600">(2 reviews)</span>
+                </div>
+
+                {/* Get Directions Link */}
+                <a
+                  href="https://maps.app.goo.gl/RFuWH1EoRd4xZNav7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block pl-7 text-green-600 hover:text-green-700 text-sm font-medium transition-colors"
+                >
+                  Get Directions →
+                </a>
               </div>
             </div>
           </div>
