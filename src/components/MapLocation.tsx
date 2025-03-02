@@ -41,9 +41,8 @@ const MapLocation = () => {
                 <div>
                   <h3 className="font-semibold text-base md:text-lg mb-2">Indo Cipanas Bonsai</h3>
                   <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    Kp Hanjawar, Desa Cimacan,<br />
-                    Kec. Cipanas, Kab. Cianjur,<br />
-                    Jawa Barat 43253
+                    Jl. Hanjawar, Palsaran, Kec. Cipanas,<br />
+                    Kabupaten Cianjur, Jawa Barat 43253
                   </p>
                   <a
                     href="https://maps.app.goo.gl/RFuWH1EoRd4xZNav7"
