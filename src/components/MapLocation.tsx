@@ -22,7 +22,7 @@ const MapLocation = () => {
             {/* Map Frame */}
             <div className="w-full h-[300px] md:h-[500px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.993418494799!2d107.05642487485847!3d-6.710680493348116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69b3003c0b9c57%3A0x383c596b750c6b95!2sIndo%20cipanas%20bonsai!5e0!3m2!1sen!2sid!4v1710670898037!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0025455092264!2d107.05640437485845!3d-6.710478048648116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69b3003c0b9c57%3A0x383c596b750c6b95!2sIndo%20cipanas%20bonsai!5e0!3m2!1sen!2sid!4v1710670898037!5m2!1sen!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -34,47 +34,35 @@ const MapLocation = () => {
               />
             </div>
 
-            {/* Location Card - Google Maps Style */}
-            <div className="absolute left-4 top-4 bg-white p-4 rounded-lg shadow-xl max-w-[280px] md:max-w-sm">
-              <div className="space-y-3">
-                {/* Business Name with Icon */}
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  <h3 className="font-semibold text-base">Indo Cipanas Bonsai</h3>
+            {/* Location Card - Exact Google Maps Style */}
+            <div className="absolute left-4 top-4 bg-white p-3 rounded-lg shadow-lg max-w-[280px]">
+              <h3 className="font-semibold text-base mb-1">Indo cipanas bonsai</h3>
+              
+              <p className="text-gray-600 text-sm mb-1">
+                Jl. Hanjawar, Palsaran, Kec. Cipanas, Kabupaten Cianjur, Jawa Barat 43253
+              </p>
+              
+              <div className="flex items-center gap-1 mb-1">
+                <span className="font-medium text-sm">5.0</span>
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="w-3 h-3 fill-yellow-400 text-yellow-400"
+                    />
+                  ))}
                 </div>
-
-                {/* Address */}
-                <p className="text-gray-600 text-sm pl-7">
-                  Jl. Hanjawar, Palsaran, Kec. Cipanas,<br />
-                  Kabupaten Cianjur, Jawa Barat 43253
-                </p>
-
-                {/* Rating */}
-                <div className="flex items-center gap-2 pl-7">
-                  <div className="flex items-center">
-                    <span className="font-medium mr-1">5.0</span>
-                    <div className="flex">
-                      {[...Array(5)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className="w-4 h-4 fill-yellow-400 text-yellow-400"
-                        />
-                      ))}
-                    </div>
-                  </div>
-                  <span className="text-sm text-gray-600">(2 reviews)</span>
-                </div>
-
-                {/* Get Directions Link */}
-                <a
-                  href="https://maps.app.goo.gl/RFuWH1EoRd4xZNav7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block pl-7 text-green-600 hover:text-green-700 text-sm font-medium transition-colors"
-                >
-                  Get Directions →
-                </a>
+                <span className="text-sm text-blue-600 hover:text-blue-800">2 reviews</span>
               </div>
+              
+              <a
+                href="https://maps.app.goo.gl/7p2yoC1BMzJfnKwTA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 text-sm font-medium block"
+              >
+                View larger map
+              </a>
             </div>
           </div>
         </div>
