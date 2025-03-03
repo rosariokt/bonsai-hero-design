@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,11 +27,13 @@ const Navigation = () => {
   };
 
   const navLinks = [
-    { href: "#about", label: "About Us" },
-    { href: "#products", label: "Products" },
-    { href: "#process", label: "Process" },
-    { href: "#testimonials", label: "Testimonials" },
-    { href: "#faq", label: "FAQ" },
+    { href: "/#about", label: "About Us" },
+    { href: "/#products", label: "Products" },
+    { href: "/#process", label: "Process" },
+    { href: "/#testimonials", label: "Testimonials" },
+    { href: "/#faq", label: "FAQ" },
+    { href: "/about", label: "Company" },
+    { href: "/privacy", label: "Privacy" },
   ];
 
   return (
@@ -41,30 +44,43 @@ const Navigation = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
-            <a href="#" className="flex items-center z-50">
+            <Link to="/" className="flex items-center z-50">
               <span className={`font-bold text-xl transition-colors ${
                 isScrolled || isMobileMenuOpen ? "text-gray-900" : "md:text-white text-gray-900"
               }`}>
                 Indo Cipanas Bonsai
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className={`${
-                    isScrolled ? "text-gray-600" : "text-white"
-                  } hover:text-green-500 transition-colors`}
-                  onClick={closeMobileMenu}
-                >
-                  {link.label}
-                </a>
+                link.href.startsWith('/#') ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className={`${
+                      isScrolled ? "text-gray-600" : "text-white"
+                    } hover:text-green-500 transition-colors`}
+                    onClick={closeMobileMenu}
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    className={`${
+                      isScrolled ? "text-gray-600" : "text-white"
+                    } hover:text-green-500 transition-colors`}
+                    onClick={closeMobileMenu}
+                  >
+                    {link.label}
+                  </Link>
+                )
               ))}
-              <a
-                href="#footer"
+              <Link
+                to="/contact"
                 className={`px-4 py-2 rounded-lg ${
                   isScrolled
                     ? "bg-green-600 text-white hover:bg-green-700"
@@ -73,7 +89,7 @@ const Navigation = () => {
                 onClick={closeMobileMenu}
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -102,22 +118,33 @@ const Navigation = () => {
         >
           <div className="flex flex-col items-center justify-center min-h-screen space-y-8 p-4">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-xl font-medium text-gray-900 hover:text-green-600 transition-colors"
-                onClick={closeMobileMenu}
-              >
-                {link.label}
-              </a>
+              link.href.startsWith('/#') ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-xl font-medium text-gray-900 hover:text-green-600 transition-colors"
+                  onClick={closeMobileMenu}
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-xl font-medium text-gray-900 hover:text-green-600 transition-colors"
+                  onClick={closeMobileMenu}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
-            <a
-              href="#footer"
+            <Link
+              to="/contact"
               className="w-full max-w-xs px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-center"
               onClick={closeMobileMenu}
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
