@@ -2,7 +2,7 @@
 import React from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Truck, Package, RefreshCcw, Globe } from "lucide-react";
+import { Truck, Package, RefreshCcw, Globe, Clock, Camera } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Shipping = () => {
