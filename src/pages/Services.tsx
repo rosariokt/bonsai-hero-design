@@ -1,9 +1,8 @@
-
 import React from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Leaf, TreePine, Trees, Plant2, Trophy, Search } from "lucide-react";
+import { Leaf, TreePine, Trees, Sprout, Trophy, Search } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -29,7 +28,7 @@ const Services = () => {
       image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07"
     },
     {
-      icon: <Plant2 className="w-12 h-12 text-green-600" />,
+      icon: <Sprout className="w-12 h-12 text-green-600" />,
       title: "Rare Tropical Plants",
       description: "Discover and order rare tropical plants, including exotic variegated species, sourced from Asia's rich biodiversity. Perfect for collectors and specialty stores.",
       highlight: "Professional packaging and export compliance",
